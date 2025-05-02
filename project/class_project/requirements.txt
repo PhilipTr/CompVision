@@ -1,22 +1,24 @@
-# Core deep learning packages
+# Core DL
 torch>=1.10.0
 torchvision>=0.11.0
 
-# Computer vision & image processing
-opencv-python>=4.5.4
-Pillow>=8.4.0
+# CLIP (zero-shot vision+language)
+git+https://github.com/openai/CLIP.git@main
+
+# Object detection (YOLOv5/v8)
+ultralytics>=8.0.0
+
+# Face detection
 mtcnn>=0.1.1
 
-# Data science & ML
+# Computer vision / I/O
+opencv-python>=4.5.4
+Pillow>=8.4.0
+
+# Data science
 numpy>=1.20.0
 scikit-learn>=1.0.0
 
-# CLIP model (multimodal understanding)
-git+https://github.com/openai/CLIP.git
-
-# Object detection with YOLO
-ultralytics>=8.0.0  # For YOLOv5
-# ultralytics-yolov9>=0.1.1  # Uncomment if using YOLOv9 directly
-
-# Optional - for better CUDA support
-cudatoolkit>=11.1  # Only if using GPU acceleration
+# Utilities
+tqdm>=4.60.0
+matplotlib>=3.4.0
